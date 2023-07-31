@@ -1,0 +1,38 @@
+http://localhost:5000/exercises
+
+###
+http://localhost:5000/exercises/648a6624e5621bec332beae2
+
+
+###
+
+http://localhost:5000/users
+###
+
+DELETE http://localhost:5000/exercises/648a665ee5621bec332beae4
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "username":"金太郎"
+}
+###
+POST http://localhost:5000/exercises/648a6624e5621bec332beae2
+Content-Type: application/json
+
+{
+    "username":"義教",
+    "description":"ミスチル",
+    "duration":3,
+    "date":"2022/9/9"
+}
+###
+
+PUT http://localhost:3000
+Content-Type: application/json
+
+{
+    "completed":"true"
+}
